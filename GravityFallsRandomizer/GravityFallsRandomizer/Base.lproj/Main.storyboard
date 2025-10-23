@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GravityFallsRandomizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_for_randomizer" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-Xp-Mji">
+                                <rect key="frame" x="0.0" y="-52" width="402" height="926"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FU7-YV-8JE">
+                                <rect key="frame" x="21.333333333333343" y="124" width="359.33333333333326" height="530"/>
+                                <color key="backgroundColor" red="1" green="0.86320608595963222" blue="0.6625967923600673" alpha="0.62098745748299322" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dipper" translatesAutoresizingMaskIntoConstraints="NO" id="m8x-3l-eWj">
+                                <rect key="frame" x="51" y="232" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="fEu-gP-wX6"/>
+                                    <constraint firstAttribute="height" constant="300" id="hay-uf-dzi"/>
+                                    <constraint firstAttribute="width" secondItem="m8x-3l-eWj" secondAttribute="height" multiplier="1:1" id="vk0-gz-ZqU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dipper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUu-Js-PHB">
+                                <rect key="frame" x="153.66666666666666" y="570" width="95" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzT-cF-GlY">
+                                <rect key="frame" x="139" y="156" width="124" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZy-T1-DKK">
+                                <rect key="frame" x="102.33333333333333" y="686" width="197.66666666666669" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cjo-Tg-N4H"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.90979617834091187" green="0.69207930564880371" blue="0.40898507833480835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Who am I?">
+                                            <attributes>
+                                                <color key="NSColor" red="0.9833730834100286" green="1" blue="0.97530557053944311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="36" name="Tahoma"/>
+                                                <font key="NSOriginalFont" size="36" name="Webdings"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDY-JE-Ce8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eUu-Js-PHB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0CJ-Jx-jCQ"/>
+                            <constraint firstItem="FU7-YV-8JE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Wa-xs-agP"/>
+                            <constraint firstItem="JZy-T1-DKK" firstAttribute="top" secondItem="eUu-Js-PHB" secondAttribute="bottom" constant="91" id="5CY-h6-XjI"/>
+                            <constraint firstItem="FU7-YV-8JE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6Bu-Hk-vyo"/>
+                            <constraint firstItem="JZy-T1-DKK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7xi-4d-dCs"/>
+                            <constraint firstItem="m8x-3l-eWj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="Cqd-7g-84u"/>
+                            <constraint firstItem="FU7-YV-8JE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21.421244553817587" id="HWg-KP-eE5"/>
+                            <constraint firstItem="m8x-3l-eWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3l-9w-mKZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JZy-T1-DKK" secondAttribute="bottom" constant="60" id="jb8-By-jLC"/>
+                            <constraint firstItem="AzT-cF-GlY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l37-5Y-9wU"/>
+                            <constraint firstItem="eUu-Js-PHB" firstAttribute="top" secondItem="m8x-3l-eWj" secondAttribute="bottom" constant="38" id="sa6-Ek-ROg"/>
+                            <constraint firstItem="JZy-T1-DKK" firstAttribute="top" secondItem="FU7-YV-8JE" secondAttribute="bottom" constant="32" id="vhO-da-VLn"/>
+                            <constraint firstItem="m8x-3l-eWj" firstAttribute="top" secondItem="AzT-cF-GlY" secondAttribute="bottom" constant="39" id="ypU-6Z-Ipl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="FU7-YV-8JE" id="LuK-bZ-eML"/>
+                        <outlet property="characterImage" destination="m8x-3l-eWj" id="XkH-8A-RJN"/>
+                        <outlet property="characterName" destination="eUu-Js-PHB" id="ZaE-fs-Qfn"/>
+                        <outlet property="randomButton" destination="JZy-T1-DKK" id="wey-YY-1d6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.31343283582089" y="124.94279176201373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_for_randomizer" width="360" height="640"/>
+        <image name="dipper" width="78" height="141.33332824707031"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
