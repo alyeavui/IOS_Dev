@@ -1,0 +1,41 @@
+# Xcode
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+*.playground/xcuserdata/
+*.playground/timeline.xctimeline
+*.build/
+build/
+DerivedData/
+*.app/
+*.ipa
+*.dSYM.zip
+*.o
+*.lo
+*.la
+*.so
+*.dylib
+*.a
+*.framework/
+*.xcassets/
+*.xcassets/AppIcon.appiconset/
+*.xcassets/LaunchImage.launchimage/
+*.xccheckout
+*.swiftpm/
+.swiftpm/
+
+# Pods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Swift Package Manager
+.build/
+
+# Other
+.DS_Store
+.localized
