@@ -1,0 +1,56 @@
+//
+//  HeroService.swift
+//  HeroRandomizerAlamofire
+//
+//  Created by Ayaulym on 06.12.2025.
+//
+
+import Foundation
+import Alamofire
+
+nonisolated
+struct HeroModel: Codable{
+    let id: Int
+    let name: String
+    let images: HeroImage
+    let powerstats: Powerstats
+    let appearance: Appearance
+    
+    struct HeroImage: Codable {
+        let md: String
+    }
+    struct Powerstats: Codable {
+        let intelligence: Int
+        let strength: Int
+        let speed: Int
+        let durability: Int
+        let power: Int
+        let combat: Int
+    }
+    struct Appearance: Codable {
+        let gender: String
+        let race: String
+    }
+}
+
+protocol HeroServiceDelegate {
+    func onHeroDidUpdate(model: HeroModel)
+}
+
+struct HeroService {
+
+    var delegate: HeroServiceDelegate?
+
+    func fetchHero() {
+        let randomId = Int.random(in: 1...564)
+        let urlString = "https://akabab.github.io/superhero-api/api/id/\(randomId).json"
+        AF.request(urlString).responseDecodable(of: HeroModel.self) { response in
+            switch response.result {
+            case .success(let hero):
+                delegate?.onHeroDidUpdate(model: hero)
+            case .failure(let error):
+                debugPrint(error)
+            }
+        }
+    }
+}
